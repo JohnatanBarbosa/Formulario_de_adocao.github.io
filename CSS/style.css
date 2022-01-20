@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Cormorant+Garamond:wght@300;400;500;600;700&family=DM+Serif+Display&family=EB+Garamond:wght@400;500;600;700;800&family=Inter:wght@100;200;300;400;500&family=Lexend+Deca:wght@200;300;400;500&family=Nanum+Myeongjo:wght@400;700;800&family=Open+Sans:wght@300;400;500;600;700&family=Roboto&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* HEADER */
+header{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+header .logo{
+  width: 60px;
+  height: 60px;
+  margin-left: 10px;
+}
+
+header .box-menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .box-menu .outline{
+  position: absolute;
+  width: 15px;
+  transition: 0.2s linear;
+
+}
+header .box-menu li{
+  list-style: none;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+header .box-menu li a{
+  text-decoration: none;
+  color: #111;
+}
+header .box-menu .sociais{
+  position: fixed;
+  display: block;
+  height: 0px;
+  transition: 0.3s linear;
+  visibility: hidden;
+  overflow-y: hidden;
+  z-index: 999;
+}
+header .box-menu .sociais li{
+  border-bottom: 1px solid grey;
+}
+header .box-menu .sociais li:hover{
+  background-color: rgb(124, 202, 246);
+  cursor: pointer;
+}
+/* ATIVAR REDES SOCIAIS */
+header .box-menu .sociais.active{
+  height: 110px;
+  visibility: visible;
+}
+header .box-menu .outline.active{
+  transform: rotate(90deg);
+}
+
+/* FORMULÁRIO - NOME E CONTATO*/
+section{
+  display: flex;
+  justify-content: center;
+}
+.form-box{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 70%;
+  border: 1px solid grey;
+}
+.form-box .form-1{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+  text-transform: uppercase;
+  font-family: 'Open Sans';
+  font-weight: 500;
+}
+.form-box .form-1 input{
+  width: 430px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(221, 221, 221);
+  padding: 5px;
+  outline: none;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: 'Open Sans';
+  font-weight: 600;
+}
+.form-box .form-2{
+  width: 100%;
+  text-transform: uppercase;
+  font-family: 'Open Sans';
+  font-weight: 500;
+}
+.form-box .form-2 .contato{
+  display: flex;
+  justify-content: space-between;
+}
+.form-box .form-2 .contato input{
+  width: 430px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(221, 221, 221);
+  padding: 5px;
+  outline: none;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: 'Open Sans';
+  font-weight: 600;
+}
+
+/* FORMULÁRIO - ANIMAL E PORTE */
+
+.form-box .animal{
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.form-box .img-animal{
+  width: 150px;
+  height: 150px;
+  border: 1px solid grey;
+}
+.form-box .select{
+  margin-top: 10px;
+
+}
+.form-box .select input{
+  margin: 10px;
+}
+
+
+

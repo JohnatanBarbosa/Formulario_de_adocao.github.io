@@ -9,6 +9,74 @@
   <title>Formulário de adoção</title>
 </head>
 <body>
-  
+  <header>
+    <img class="logo" src="./assets/logo.png" alt="Logo do site">
+    <ul class="box-menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Quem somos</a></li>
+      <li><a onclick="mostrar()" href="#">Redes sociais <img class="outline" src="./assets/outline.svg" alt=""></a>
+        <ul class="sociais">
+          <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon> LinkedIn</a></li>
+          <li><a href="#"><ion-icon name="logo-github"></ion-icon> GitHub</a></li>
+          <li><a href="#"><ion-icon name="logo-whatsapp"></ion-icon> Whatsapp</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Saiba mais</a></li>
+    </ul>
+  </header>
+
+  <section>
+    <div class="form-box">
+      <div class="form-1">
+        <div class="campo">
+          Nome <br>
+          <input type="text" name="nome">
+        </div>
+        <div class="campo">
+          Sobrenome <br>
+          <input type="text" name="sobrenome" >
+        </div>
+      </div>
+      <div class="form-2">
+          <div class="contato">
+            <div>
+              Email <br>
+              <input type="email" name="email" ><br>
+            </div>
+            <div>
+              Telefone <br>
+              <input type="tel" name="telefone" >
+            </div>
+          </div>
+
+          <div class="animal">
+            <div class="img-animal">
+
+            </div>
+            <div class="select">
+              <input type="radio" name="animal" value="Cachorro" checked> Cachorro
+              <br>
+              <input type="radio" name="animal" value="Gato"> Gato
+            </div>
+          </div>
+
+          <div class="porte">
+            <h3>Porte do animal</h3>
+            <div class="img-porte">
+
+            </div>
+            <br>
+            <input type="radio" name="porte" value="pequeno" checked> Pequeno 
+            <br>
+            <input type="radio" name="porte" value="medio"> Medio 
+            <br>
+            <input type="radio" name="porte" value="grande" > Grande 
+          </div>
+
+      </div>
+    </div>
+  </section>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
