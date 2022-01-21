@@ -9,6 +9,7 @@
   <title>Formulário de adoção</title>
 </head>
 <body>
+  <!-- Menu de navegação -->
   <header>
     <img class="logo" src="./assets/logo.png" alt="Logo do site">
     <ul class="box-menu">
@@ -24,6 +25,7 @@
       <li><a href="#">Saiba mais</a></li>
     </ul>
   </header>
+  <!-- Formulário -->
 
   <section>
     <div class="form-box">
@@ -48,29 +50,31 @@
               <input type="tel" name="telefone" >
             </div>
           </div>
-
+          <!-- Animal  -->
           <div class="animal">
             <div class="img-animal">
-
+              <img class="imagem" src="./assets/cachorro.png" alt="" data-animal="Cachorro">
             </div>
             <div class="select">
-              <input type="radio" name="animal" value="Cachorro" checked> Cachorro
+              <input onclick="trocarAnimal('cachorro.png', 'Cachorro');trocar()" type="radio" name="animal" value="Cachorro" checked> Cachorro
               <br>
-              <input type="radio" name="animal" value="Gato"> Gato
+              <input onclick="trocarAnimal('gato.png', 'Gato')" type="radio" name="animal" value="Gato"> Gato
             </div>
           </div>
-
+          <!-- Porte do animal -->
           <div class="porte">
             <h3>Porte do animal</h3>
             <div class="img-porte">
-
+              <img class="porte-animal" src="./assets/pequeno.png" alt="" data-porte="Pequeno">
             </div>
-            <br>
-            <input type="radio" name="porte" value="pequeno" checked> Pequeno 
-            <br>
-            <input type="radio" name="porte" value="medio"> Medio 
-            <br>
-            <input type="radio" name="porte" value="grande" > Grande 
+            <div class="select">
+              <br>
+              <input onclick="trocarPorte('pequeno.png', 'Pequeno')" type="radio" name="porte" value="pequeno" checked> Pequeno 
+              <br>
+              <input onclick="trocarPorte('medio.png', 'Medio')" type="radio" name="porte" value="medio"> Medio 
+              <br>
+              <input onclick="trocarPorte('grande.png', 'Grande')" type="radio" name="porte" value="grande" > Grande 
+            </div>
           </div>
 
       </div>

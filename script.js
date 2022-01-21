@@ -4,3 +4,14 @@ function mostrar(){
   mostrarRedes.classList.toggle('active')
   rotate.classList.toggle('active')
 }
+function trocarAnimal(filename, animalname){
+  document.querySelector('.imagem').setAttribute('src', 'assets/' + filename)
+  document.querySelector('.imagem').setAttribute('data-animal' + animalname)
+  if(filename == 'Cachorro'){
+    
+  }
+}
+function trocarPorte(filename, animalporte){
+  document.querySelector('.porte-animal').setAttribute('src', 'assets/' + filename)
+  document.querySelector('porte-animal').setAttribute('data-porte' + animalporte)
+}

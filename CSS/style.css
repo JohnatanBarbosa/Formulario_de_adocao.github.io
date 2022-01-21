@@ -10,6 +10,8 @@ header{
   display: flex;
   justify-content: space-between;
   padding: 10px;
+  background: linear-gradient(88.27deg, #574ae8 0%, #3ea1db 100%);
+  box-shadow: 0 1px 5px #333;
 }
 header .logo{
   width: 60px;
@@ -78,8 +80,11 @@ section{
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  margin: 20px;
   width: 70%;
-  border: 1px solid grey;
+  background: linear-gradient(88.27deg, #574ae8 0%, #3ea1db 100%);
+  border-radius: 30px;
+  box-shadow: 0 0 5px #333;
 }
 .form-box .form-1{
   display: flex;
@@ -127,7 +132,7 @@ section{
   font-weight: 600;
 }
 
-/* FORMULÁRIO - ANIMAL E PORTE */
+/* FORMULÁRIO - ANIMAL */
 
 .form-box .animal{
   margin-top: 10px;
@@ -141,6 +146,12 @@ section{
   width: 150px;
   height: 150px;
   border: 1px solid grey;
+  border-radius: 50%;
+}
+.form-box .img-animal .imagem{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
 }
 .form-box .select{
   margin-top: 10px;
@@ -148,6 +159,31 @@ section{
 }
 .form-box .select input{
   margin: 10px;
+}
+
+/* FORMULÁRIO - PORTE DO ANIMAL */
+
+.form-box .porte{
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.porte.tirar{
+  display: none;
+}
+.form-box .porte .img-porte{
+  width: 150px;
+  height: 150px;
+  border: 1px solid grey;
+  border-radius: 50%;
+}
+.form-box .porte .porte-animal{
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
 }
 
 
