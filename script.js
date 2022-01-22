@@ -7,9 +7,6 @@ function mostrar(){
 function trocarAnimal(filename, animalname){
   document.querySelector('.imagem').setAttribute('src', 'assets/' + filename)
   document.querySelector('.imagem').setAttribute('data-animal' + animalname)
-  if(filename == 'Cachorro'){
-    
-  }
 }
 function trocarPorte(filename, animalporte){
   document.querySelector('.porte-animal').setAttribute('src', 'assets/' + filename)

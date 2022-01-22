@@ -87,16 +87,24 @@ section{
   box-shadow: 0 0 5px #333;
 }
 .form-box .form-1{
-  display: flex;
-  justify-content: space-between;
   width: 100%;
   height: 60px;
   text-transform: uppercase;
   font-family: 'Open Sans';
   font-weight: 500;
 }
+.form-box .campo-1{
+  position: absolute;
+  width: 43%;
+
+}
+.form-box .campo-2{
+  position: absolute;
+  right: 20px;
+  width: 43%;
+}
 .form-box .form-1 input{
-  width: 430px;
+  width: 100%;
   height: 30px;
   border: none;
   border-radius: 5px;
@@ -114,12 +122,9 @@ section{
   font-family: 'Open Sans';
   font-weight: 500;
 }
-.form-box .form-2 .contato{
-  display: flex;
-  justify-content: space-between;
-}
+
 .form-box .form-2 .contato input{
-  width: 430px;
+  width: 100%;
   height: 30px;
   border: none;
   border-radius: 5px;
@@ -135,7 +140,7 @@ section{
 /* FORMULÁRIO - ANIMAL */
 
 .form-box .animal{
-  margin-top: 10px;
+  margin-top: 100px;
   width: 100%;
   display: flex;
   justify-content: center;
