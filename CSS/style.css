@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Cormorant+Garamond:wght@300;400;500;600;700&family=DM+Serif+Display&family=EB+Garamond:wght@400;500;600;700;800&family=Inter:wght@100;200;300;400;500&family=Lexend+Deca:wght@200;300;400;500&family=Nanum+Myeongjo:wght@400;700;800&family=Open+Sans:wght@300;400;500;600;700&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Cormorant+Garamond:wght@300;400;500;600;700&family=DM+Serif+Display&family=EB+Garamond:wght@400;500;600;700;800&family=Inter:wght@100;200;300;400;500&family=Lexend+Deca:wght@200;300;400;500&family=Nanum+Myeongjo:wght@400;700;800&family=Open+Sans:wght@300;400;500;600;700&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Outfit';
 }
 /* HEADER */
 header{
@@ -69,127 +70,157 @@ header .box-menu .outline.active{
 }
 
 /* FORMULÁRIO - NOME E CONTATO*/
-section{
-  display: flex;
-  justify-content: center;
-}
+
 .form-box{
   position: relative;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  margin: 20px;
   width: 70%;
-  background: linear-gradient(88.27deg, #574ae8 0%, #3ea1db 100%);
-  border-radius: 30px;
-  box-shadow: 0 0 5px #333;
-}
-.form-box .form-1{
-  width: 100%;
-  height: 60px;
-  text-transform: uppercase;
-  font-family: 'Open Sans';
-  font-weight: 500;
-}
-.form-box .campo-1{
-  position: absolute;
-  width: 43%;
-
-}
-.form-box .campo-2{
-  position: absolute;
-  right: 20px;
-  width: 43%;
-}
-.form-box .form-1 input{
-  width: 100%;
-  height: 30px;
-  border: none;
-  border-radius: 5px;
-  background-color: rgb(221, 221, 221);
-  padding: 5px;
-  outline: none;
-  font-size: 15px;
-  text-transform: uppercase;
-  font-family: 'Open Sans';
-  font-weight: 600;
-}
-.form-box .form-2{
-  width: 100%;
-  text-transform: uppercase;
-  font-family: 'Open Sans';
-  font-weight: 500;
-}
-
-.form-box .form-2 .contato input{
-  width: 100%;
-  height: 30px;
-  border: none;
-  border-radius: 5px;
-  background-color: rgb(221, 221, 221);
-  padding: 5px;
-  outline: none;
-  font-size: 15px;
-  text-transform: uppercase;
-  font-family: 'Open Sans';
-  font-weight: 600;
-}
-
-/* FORMULÁRIO - ANIMAL */
-
-.form-box .animal{
-  margin-top: 100px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-.form-box .img-animal{
-  width: 150px;
-  height: 150px;
+  margin: 100px auto;
+  padding: 10px;
   border: 1px solid grey;
-  border-radius: 50%;
+
 }
-.form-box .img-animal .imagem{
+/* Nome e Sobrenome */
+.form-box .contact{
+  position: relative;
   width: 100%;
+  height: 70px;
+
+}
+.form-box .contact .input{
+  position: absolute;
+  width: 50%;
   height: 100%;
-  border-radius: 50%;
+  font-size: 20px;
+  padding-right: 10px;
 }
-.form-box .select{
-  margin-top: 10px;
-
+.form-box .contact .input-2{
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  font-size: 20px;
+  padding-left: 10px;
+  right: 0;
 }
-.form-box .select input{
-  margin: 10px;
-}
-
-/* FORMULÁRIO - PORTE DO ANIMAL */
-
-.form-box .porte{
-  margin-top: 30px;
+.form-box .contact input{
   width: 100%;
+  height: 40px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(223, 223, 223);
+  outline: none;
+}
+/* Email e Telefone */
+.form-box .contact-2{
+  position: relative;
+  width: 100%;
+  height: 70px;
+
+}
+.form-box .contact-2 .input{
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  font-size: 20px;
+  padding-right: 10px;
+}
+.form-box .contact-2 .input-2{
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  font-size: 20px;
+  padding-left: 10px;
+  right: 0;
+}
+.form-box .contact-2 input{
+  width: 100%;
+  height: 40px;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(223, 223, 223);
+}
+
+/* Seleção de animal */
+.select{
+  position: relative;
+  width: 100%;
+}
+.select .select-animal{
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
+  width: 100%;
 }
-.porte.tirar{
+.select .animal-image{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
   display: none;
+  
 }
-.form-box .porte .img-porte{
-  width: 150px;
-  height: 150px;
-  border: 1px solid grey;
+.select-animal .input-2 input{
+  margin: 5px;
+}
+
+/* Select cachorro ou gato */
+.animal-image.cachorro{
+  display: block;
+  background: url(/assets/cachorro.png);
+  background-size: cover;
+  background-position: center;
+}
+.animal-image.gato{
+  display: block;
+  background: url(/assets/gato.png);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Tamanho do animal */
+.tamanho-cachorro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
+  width: 100%;
+}
+.tamanho-cachorro .tamanho-imagem{
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
 }
-.form-box .porte .porte-animal{
-  width: 100%;
-  height: 100%;
-  border-radius: 10%;
+.tamanho-cachorro input{
+  margin: 5px;
 }
+.tamanho-cachorro.box{
+
+}
+
+
+.tamanho-gato{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
+  width: 100%;
+}
+.tamanho-gato input{
+  margin: 5px;
+}
+.tamanho-gato .tamanho-imagem{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.tamanho-gato.box-2{
+
+}
+
 
 
 

@@ -26,60 +26,87 @@
     </ul>
   </header>
   <!-- Formulário -->
-
-  <section>
+  <nav>
+    <!-- Nome e Sobrenome -->
     <div class="form-box">
-      <div class="form-1">
-        <div class="campo-1">
-          Nome <br>
+      <div class="contact">
+        <div class="input">
+          Nome
+          <br>
           <input type="text" name="nome">
         </div>
-        <div class="campo-2">
-          Sobrenome <br>
-          <input type="text" name="sobrenome" >
+        <div  class="input-2">
+          Sobrenome
+          <br>
+          <input type="text" name="nome">
         </div>
       </div>
-      <div class="form-2">
-          <div class="contato">
-            <div class="campo-1">
-              Email <br>
-              <input type="email" name="email" ><br>
-            </div>
-            <div class="campo-2">
-              Telefone <br>
-              <input type="tel" name="telefone" >
-            </div>
+      <!-- Email e Telefone -->
+      <div class="contact-2">
+        <div class="input">
+          E-mail
+          <br>
+          <input type="email" name="email">
+        </div>
+        <div class="input-2">
+          Telefone
+          <br>
+          <input type="tel" name="telefone">
+        </div>
+      </div>
+
+      <!-- Seleção do animal e tamanho -->
+
+      <div class="select">
+        <div class="select-animal">
+          <h3>Qual animal deseja adotar?</h3>
+          <div class="animal-image">
+
           </div>
-          <!-- Animal  -->
-          <div class="animal">
-            <div class="img-animal">
-              <img class="imagem" src="./assets/cachorro.png" alt="" data-animal="Cachorro">
-            </div>
-            <div class="select">
-              <input onclick="trocarAnimal('cachorro.png', 'Cachorro');trocar()" type="radio" name="animal" value="Cachorro" checked> Cachorro
-              <br>
-              <input onclick="trocarAnimal('gato.png', 'Gato')" type="radio" name="animal" value="Gato"> Gato
-            </div>
+          <div class="input-2">
+            <input onclick="cachorro()" type="radio" name="animal"> Cachorro
+            <br>
+            <input onclick="gato()" type="radio" name="animal"> Gato
           </div>
-          <!-- Porte do animal -->
-          <div class="porte">
-            <h3>Porte do animal</h3>
-            <div class="img-porte">
-              <img class="porte-animal" src="./assets/pequeno.png" alt="" data-porte="Pequeno">
+        </div>
+
+          <!-- Tamamho do animal -->
+
+          <div class="tamanho-cachorro">
+            <h3>Qual o tamanho que deseja?</h3>
+            <div class="tamanho-imagem">
+
             </div>
-            <div class="select">
+            <div class="input-2">
+              <input type="radio" name="tamanho"> Pequeno
               <br>
-              <input onclick="trocarPorte('pequeno.png', 'Pequeno')" type="radio" name="porte" value="pequeno" checked> Pequeno 
+              <input type="radio" name="tamanho"> Médio
               <br>
-              <input onclick="trocarPorte('medio.png', 'Medio')" type="radio" name="porte" value="medio"> Medio 
-              <br>
-              <input onclick="trocarPorte('grande.png', 'Grande')" type="radio" name="porte" value="grande" > Grande 
+              <input type="radio" name="tamanho"> Grande
             </div>
           </div>
 
+          <div class="tamanho-gato">
+            <h3>Qual o tamanho que deseja?</h3>
+            <div class="tamanho-imagem">
+
+            </div>
+            <div class="input-2">
+              <input type="radio" name="tamanho"> Pequeno
+              <br>
+              <input type="radio" name="tamanho"> Médio
+              <br>
+              <input type="radio" name="tamanho"> Grande
+            </div>
+          </div>
       </div>
+      <div class="botão">
+        <button>Enviar</button>
+      </div>
+
     </div>
-  </section>
+  </nav>
+  
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script src="script.js"></script>
 </body>
