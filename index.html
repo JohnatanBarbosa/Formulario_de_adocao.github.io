@@ -17,9 +17,9 @@
       <li><a href="#">Quem somos</a></li>
       <li><a onclick="mostrar()" href="#">Redes sociais <img class="outline" src="./assets/outline.svg" alt=""></a>
         <ul class="sociais">
-          <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon> LinkedIn</a></li>
-          <li><a href="#"><ion-icon name="logo-github"></ion-icon> GitHub</a></li>
-          <li><a href="#"><ion-icon name="logo-whatsapp"></ion-icon> Whatsapp</a></li>
+          <li><a href="https://www.linkedin.com/in/johnatan-barbosa-de-brito-7845631ab/"><ion-icon name="logo-linkedin"></ion-icon> LinkedIn</a></li>
+          <li><a href="https://github.com/JohnatanBarbosa"><ion-icon name="logo-github"></ion-icon> GitHub</a></li>
+          <li><a href="https://api.whatsapp.com/send?phone=5561992608982"><ion-icon name="logo-whatsapp"></ion-icon> Whatsapp</a></li>
         </ul>
       </li>
       <li><a href="#">Saiba mais</a></li>
@@ -31,27 +31,27 @@
     <div class="form-box">
       <div class="contact">
         <div class="input">
-          Nome
+          <label for="nome">Nome</label>
           <br>
-          <input type="text" name="nome">
+          <input id="nome" type="text" name="nome" required>
         </div>
         <div  class="input-2">
-          Sobrenome
+          <label for="sobrenome">Sobrenome</label>
           <br>
-          <input type="text" name="nome">
+          <input id="sobrenome" type="text" name="sobrenome" required>
         </div>
       </div>
       <!-- Email e Telefone -->
       <div class="contact-2">
         <div class="input">
-          E-mail
+          <label for="email">E-mail</label>
           <br>
-          <input type="email" name="email">
+          <input id="email" type="email" name="email" required>
         </div>
         <div class="input-2">
-          Telefone
+          <label for="telefone">Telefone</label>
           <br>
-          <input type="tel" name="telefone">
+          <input id="telefone" type="tel" name="telefone" required>
         </div>
       </div>
 
@@ -75,36 +75,43 @@
           <div class="tamanho-cachorro">
             <h3>Qual o tamanho que deseja?</h3>
             <div class="tamanho-imagem">
-
+              <img class="tamanhoCachorro" src="./assets/pequeno.png" data-cachorro="Cachorro">
             </div>
             <div class="input-2">
-              <input type="radio" name="tamanho"> Pequeno
+              <input onclick="trocarCachorro('pequeno.png', 'Pequeno')" type="radio" name="cachorro" checked > Pequeno
               <br>
-              <input type="radio" name="tamanho"> Médio
+              <input onclick="trocarCachorro('medio.png', 'Médio')" type="radio" name="cachorro"> Médio
               <br>
-              <input type="radio" name="tamanho"> Grande
+              <input onclick="trocarCachorro('grande.png', 'Grande')" type="radio" name="cachorro"> Grande
             </div>
           </div>
 
           <div class="tamanho-gato">
             <h3>Qual o tamanho que deseja?</h3>
             <div class="tamanho-imagem">
-
+              <img class="tamanhoGato" src="./assets/gato-pequeno.png" data-gato="Gato">
             </div>
             <div class="input-2">
-              <input type="radio" name="tamanho"> Pequeno
+              <input onclick="trocarGato('gato-pequeno.png', 'Pequeno')" type="radio" name="gato" checked
+              > Pequeno
               <br>
-              <input type="radio" name="tamanho"> Médio
+              <input onclick="trocarGato('gato-medio.png', 'Médio')" type="radio" name="gato"> Médio
               <br>
-              <input type="radio" name="tamanho"> Grande
+              <input onclick="trocarGato('gato-grande.png', 'Grande')" type="radio" name="gato"> Grande
             </div>
           </div>
       </div>
-      <div class="botão">
-        <button>Enviar</button>
-      </div>
+
+      
+        <button onclick="enviar()" class="botao">Enviar</button>
 
     </div>
+
+    <div class="mensagem">
+      <h2>Informações enviadas</h2>
+      <h5>Aguarde, entraremos em contato o quanto antes.</h5>
+    </div>
+    
   </nav>
   
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

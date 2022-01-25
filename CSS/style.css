@@ -7,7 +7,9 @@
 }
 /* HEADER */
 header{
-  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 10px;
@@ -45,16 +47,19 @@ header .box-menu li a{
   color: #111;
 }
 header .box-menu .sociais{
-  position: fixed;
+  position: absolute;
   display: block;
   height: 0px;
   transition: 0.3s linear;
   visibility: hidden;
   overflow-y: hidden;
-  z-index: 999;
+  background-color: #4196dc;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 1px 5px #333;
 }
 header .box-menu .sociais li{
-  border-bottom: 1px solid grey;
+  border-bottom: 2px solid #333;
+  transition: 0.2s linear;
 }
 header .box-menu .sociais li:hover{
   background-color: rgb(124, 202, 246);
@@ -62,6 +67,7 @@ header .box-menu .sociais li:hover{
 }
 /* ATIVAR REDES SOCIAIS */
 header .box-menu .sociais.active{
+  margin-top: 30px;
   height: 110px;
   visibility: visible;
 }
@@ -78,6 +84,9 @@ header .box-menu .outline.active{
   padding: 10px;
   border: 1px solid grey;
 
+}
+.form-box.clicado{
+  display: none;
 }
 /* Nome e Sobrenome */
 .form-box .contact{
@@ -146,6 +155,7 @@ header .box-menu .outline.active{
 .select{
   position: relative;
   width: 100%;
+  margin-top: 15px;
 }
 .select .select-animal{
   display: flex;
@@ -181,7 +191,7 @@ header .box-menu .outline.active{
 
 /* Tamanho do animal */
 .tamanho-cachorro{
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -191,18 +201,24 @@ header .box-menu .outline.active{
 .tamanho-cachorro .tamanho-imagem{
   width: 100px;
   height: 100px;
-  border-radius: 50%;
+  border-radius: 20px;
+  margin: 10px;
+}
+.tamanho-cachorro .tamanho-imagem .tamanhoCachorro{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
 }
 .tamanho-cachorro input{
   margin: 5px;
 }
 .tamanho-cachorro.box{
-
+  display: flex;
 }
 
 
 .tamanho-gato{
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -215,10 +231,52 @@ header .box-menu .outline.active{
 .tamanho-gato .tamanho-imagem{
   width: 100px;
   height: 100px;
-  border-radius: 50%;
+  border-radius: 20px;
+  margin: 10px;
+}
+.tamanho-gato .tamanho-imagem .tamanhoGato{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
 }
 .tamanho-gato.box-2{
+  display: flex;
+}
 
+/* Botão */
+
+.botao{
+  display: block;
+  border: none;
+  width: 20%;
+  height: 30px;
+  text-transform: uppercase;
+  font-family: 'Outfit';
+  font-weight: 600;
+  margin: 10px auto;
+  border-radius: 10px;
+  background: linear-gradient(88.27deg, #574ae8 0%, #3ea1db 100%);
+  color: #fff;
+
+}
+.botao:hover{
+  background: linear-gradient(88.27deg, #463aca 0%, #3383b1 100%);
+  cursor: pointer;
+}
+
+/* Mensagem final */
+
+.mensagem{
+  display: none;
+  width: 100%;
+  height: calc(100vh - 80px);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 25px;
+}
+.mensagem.clicado{
+  display: flex;
 }
 
 
