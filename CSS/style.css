@@ -21,6 +21,15 @@ header .logo{
   height: 60px;
   margin-left: 10px;
 }
+header .btn-menu{
+  display: none;
+  width: 40px;
+  height: 40px;
+  background: url(/assets/menu.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
 
 header .box-menu{
   display: flex;
@@ -80,9 +89,10 @@ header .box-menu .outline.active{
 .form-box{
   position: relative;
   width: 70%;
-  margin: 100px auto;
-  padding: 10px;
-  border: 1px solid grey;
+  margin: 110px auto;
+  padding: 20px;
+  background: linear-gradient(180deg, #574ae8 0%, #3ea1db 100%);
+  border-radius: 15px;
 
 }
 .form-box.clicado{
@@ -113,11 +123,13 @@ header .box-menu .outline.active{
 .form-box .contact input{
   width: 100%;
   height: 40px;
+  padding: 10px;
   font-size: 20px;
   border: none;
   border-radius: 5px;
   background-color: rgb(223, 223, 223);
   outline: none;
+  opacity: 0.5;
 }
 /* Email e Telefone */
 .form-box .contact-2{
@@ -144,7 +156,9 @@ header .box-menu .outline.active{
 .form-box .contact-2 input{
   width: 100%;
   height: 40px;
+  padding: 10px;
   font-size: 20px;
+  opacity: 0.5;
   outline: none;
   border: none;
   border-radius: 5px;
@@ -173,6 +187,7 @@ header .box-menu .outline.active{
 }
 .select-animal .input-2 input{
   margin: 5px;
+  cursor: pointer;
 }
 
 /* Select cachorro ou gato */
@@ -190,6 +205,8 @@ header .box-menu .outline.active{
 }
 
 /* Tamanho do animal */
+
+/* Cachorro */
 .tamanho-cachorro{
   display: none;
   justify-content: center;
@@ -211,11 +228,14 @@ header .box-menu .outline.active{
 }
 .tamanho-cachorro input{
   margin: 5px;
+  cursor: pointer;
 }
 .tamanho-cachorro.box{
   display: flex;
 }
 
+
+/* Gato */
 
 .tamanho-gato{
   display: none;
@@ -224,9 +244,11 @@ header .box-menu .outline.active{
   flex-direction: column;
   margin-top: 10px;
   width: 100%;
+  
 }
 .tamanho-gato input{
   margin: 5px;
+  cursor: pointer;
 }
 .tamanho-gato .tamanho-imagem{
   width: 100px;
@@ -248,21 +270,25 @@ header .box-menu .outline.active{
 .botao{
   display: block;
   border: none;
-  width: 20%;
+  width: 200px;
   height: 30px;
   text-transform: uppercase;
   font-family: 'Outfit';
   font-weight: 600;
   margin: 10px auto;
   border-radius: 10px;
-  background: linear-gradient(88.27deg, #574ae8 0%, #3ea1db 100%);
+  background-color: #574ae8;
   color: #fff;
+  transition: 0.2s linear;
 
 }
 .botao:hover{
-  background: linear-gradient(88.27deg, #463aca 0%, #3383b1 100%);
   cursor: pointer;
+  background-color: #3ea1db;
+  letter-spacing: 1px;
+
 }
+
 
 /* Mensagem final */
 

@@ -1,0 +1,87 @@
+/* Menu de navegação */
+@media (max-width: 600px) {
+  header .logo {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+  }
+  header .box-menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 0;
+    height: calc(100vh - 60px);
+    top: 60px;
+    visibility: hidden;
+    overflow-x: hidden;
+    right: 0;
+    z-index: 999;
+    background-color: #458bdf;
+    transition: 0.3s linear;
+  }
+
+  header .box-menu.active {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    top: 60px;
+    overflow-x: hidden;
+    visibility: visible;
+    height: calc(100vh - 60px);
+    z-index: 999;
+    right: 0;
+    background-color: #458bdf;
+  }
+  header .box-menu .sociais {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 00;
+  }
+  header .btn-menu {
+    display: block;
+    cursor: pointer;
+  }
+  header .btn-menu.active {
+    width: 40px;
+    height: 40px;
+    background: url(/assets/close.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .form-box .contact {
+    height: 140px;
+  }
+  .form-box .contact .input {
+    padding-right: 0;
+    width: 100%;
+  }
+  .form-box .contact .input-2 {
+    width: 100%;
+    position: inherit;
+    display: block;
+    left: 0;
+    top: 75px;
+    padding-left: 0;
+  }
+  .form-box .contact-2 {
+    margin-top: 5px;
+    height: 140px;
+  }
+  .form-box .contact-2 .input {
+    padding-right: 0;
+    width: 100%;
+  }
+  .form-box .contact-2 .input-2 {
+    width: 100%;
+    position: inherit;
+    display: block;
+    left: 0;
+    top: 75px;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 400px) {
+}
