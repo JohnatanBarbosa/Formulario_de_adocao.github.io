@@ -9,34 +9,49 @@
     position: absolute;
     display: flex;
     flex-direction: column;
-    width: 0;
-    height: calc(100vh - 60px);
+    width: 100%;
+    left: -100%;
+    height: calc(100% - 60px);
     top: 60px;
-    visibility: hidden;
-    overflow-x: hidden;
-    right: 0;
     z-index: 999;
-    background-color: #458bdf;
+    background: linear-gradient(90deg, #574ae8 0%, #3ea1db 100%);
     transition: 0.3s linear;
+  
+  }
+  header .box-menu li{
+    list-style: none;
+    padding: 10px;
+    padding-bottom: 40px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
   }
 
   header .box-menu.active {
     position: absolute;
-    display: flex;
-    flex-direction: column;
-    width: 50%;
+    width: 100%;
+    left: 0;
     top: 60px;
-    overflow-x: hidden;
-    visibility: visible;
-    height: calc(100vh - 60px);
+    height: calc(100% - 60px);
     z-index: 999;
-    right: 0;
-    background-color: #458bdf;
+    background: linear-gradient(90deg, #574ae8 0%, #3ea1db 100%);
   }
+ 
+  
   header .box-menu .sociais {
     position: relative;
     background-color: rgba(0, 0, 0, 0);
-    border-radius: 00;
+    border-radius: 0;
+  }
+  header .box-menu .sociais li{
+    padding: 15px;
+  }
+  header .box-menu .sociais.active{
+    height: 170px;
+
+  }
+  header .box-menu .outline{
+    width: 25px;
   }
   header .btn-menu {
     display: block;
@@ -48,6 +63,11 @@
     background: url(/assets/close.svg);
     background-size: cover;
     background-repeat: no-repeat;
+  }
+  .form-box{
+    position: relative;
+    width: 95%;
+    margin: 50px auto;
   }
 
   .form-box .contact {
